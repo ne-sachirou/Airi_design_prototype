@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>ログイン</title>
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
@@ -16,16 +16,18 @@
       </nav>
     </header>
     <article>
-      <aside>
-        <nav>
-          本文ナビゲーション
-        </nav>
-      </aside>
+      <form action="mypage.html" method="post">
+        <div>メールアドレス <input type="text" name="mail" placeholder="メールアドレス" /></div>
+        <div>パスワード <input type="password" name="password" placeholder="パスワード" /></div>
+        <div><input type="submit" value="登録" /></div>
+        <div>
+          <input type="button" value="Twitterでユーザ登録" />
+          <input type="button" value="Facebookでユーザ登録" />
+        </div>
+      </form>
     </article>
     <footer>
-      <nav>
-        フッタナビゲーション
-      </nav>
+      <nav></nav>
     </footer>
   </div>
   <script src="scripts/jquery.min.js"></script>
