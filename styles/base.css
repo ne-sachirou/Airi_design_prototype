@@ -3,13 +3,16 @@ body {
 }
 
 header {
+  background: #eff;
   width: 100%;
 }
 
 article {
+  background: #fef;
   width: 100%;
 }
 
 footer {
+  background: #ffe;
   width: 100%;
 }
