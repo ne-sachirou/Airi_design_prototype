@@ -1,0 +1,90 @@
+HEWで最終的に提出するものは、製品のprototypeなのですが、今回、画面一覧や画面設
+計等を精密に行う為に、design用のprototypeを作成しようと思います。このdesign
+prototypeはHTMLで記述するのですが、今まで行なってきたGoogle DocsやDropboxでは
+そう云ったcodeの共有には大変不便です。Google Docsではcodeの編集を行えません
+し、Dropboxでは例えば同じfaileを複数人で編集できない等の不便が有ります。そこ
+で、code共有に最適なgitとGitHubというtoolを使いましょう。
+GitHubへは既にrepositoryを作成しています。
+    https://github.com/ne-sachirou/Airi_design_prototype
+このsiteにてaccountをとってください。
+以下に、gitのset up方法と、使い方を記述します。
+
+1. gitをinstallする。
+  git用のCUI toolがinstallされていますから、gitのsite
+  http://git-scm.com/downloads からgitをdownloadし、installしてください。
+
+2. gitに設定を施す。
+  GitHubのhelp https://help.github.com/articles/set-up-git を参考に、commandを打ちます。
+      git config --global user.name "名前を英数文字で"
+      git config --global user.email "メールアドレス"
+      git config --global http.proxy http://ths学籍番号:プロキシパスワード@proxy.tokyo.hal.ac.jp:8080
+
+3. 公開鍵をGitHubへ登録する。
+  次に https://help.github.com/articles/generating-ssh-keys を参考に、SSH公開
+  鍵を作り、GitHubへ投稿します。
+      ssh-keygen -t rsa -C "メールアドレス"
+  passwordを二度要求されるので、同じものを二度打ち込んでください。出来上がった
+  公開鍵 (.pub file) の中身を、GitHubへ登録してください。
+
+ここまで終われば、井上幸亨郎へその旨連絡してください。
+
+覚えるべきcommand。
+   cd ディレクトリパス
+   git init
+   git clone ギットURL
+   git remote
+   git remote add リモート名 リモートURL
+   git status
+   git add -A
+   git commit -m "コミットメッセージ"
+   git push リモート名 ブランチ名
+   git pull リモート名 ブランチ名
+以上は必須です。以上以外のcommandは、必要に応じて覚えましょう。
+
+1. cd ディレクトリパス
+  change directory。current directoryを変更する。
+  ex.)
+      $ cd /C/Users/ne_Sachirou/Documents/HALt/DB22/Airi_design_prototype
+      $ pwd
+      /C/Users/ne_Sachirou/Documents/HALt/DB22/Airi_design_prototype
+
+2. git init
+  git repositoryを初期化する。今回は井上幸亨郎が既に制作したrepositoryをclone
+  して作業する為、このocmmandは使わない。
+
+3. git clone ギットURL
+  gitはlocalで完結できるsystemですが、他人とcodeの遣り取りを出来なければ役に立
+  たない。gitの仕組みは他で理解しましょう。
+  remoteのgit repositoryをlocalへcloneする。
+  ex.)
+      $ git clone https://github.com/ne-sachirou/Airi_design_prototype
+      Cloning done to Airi_design_prototype.
+      $ cd Airi_design_prototype
+
+4. git remote
+  git repositoryに登録されているremote repositoryを確認する。
+  ex.)
+      $ git remote
+      origin
+
+5. git remote add リモート名 リモートURL
+  remote repositoryを新たに登録する。git cloneに依って作成したrepositoryには、
+  既にoriginと云うremote repositoryが存在し、今回はこのoriginのみを使用する
+  為、このcommandを使わない。
+
+6. git status
+  git repositoryのstatusを確認する。git addやgit clone・git push・git pullの前
+  に、必ずこのcommandにて確認を行うこと。
+  ex.)
+      $ git status
+
+7. git add -A
+
+8. git commit -m "コミットメッセージ"
+
+9. git push リモート名 ブランチ名
+
+10. git pull リモート名 ブランチ名
+
+
+vim: set fenc=utf-8

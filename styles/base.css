@@ -1,3 +1,15 @@
 body {
   background: white;
 }
+
+header {
+  width: 100%;
+}
+
+article {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
