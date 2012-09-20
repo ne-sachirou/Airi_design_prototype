@@ -1,0 +1,10 @@
+@import url("base.css");
+#header{
+   background-color:#fee;
+}
+#article{
+   background-color:#efe;
+}
+#footer{
+   background-color:#eef;
+}

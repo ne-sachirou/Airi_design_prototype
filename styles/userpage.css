@@ -1,10 +1,14 @@
-body {
-  background: white;
-}
+@import url("base.css");
 
 #profile{
   background-color:#ffeeee
 }
 #changepage{
   background-color:#eeffee
+}
+#header{
+  background-color:#eef;
+}
+#footer{
+  background-color:#ffa;
 }
